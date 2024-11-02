@@ -1,9 +1,117 @@
 body{
     background-image: url(/World-Of-Food-/images/background1.jfif);
-
-}
-
-nave{
-    background-color: #D6860D;
     
 }
+.container{
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+    gap: 30px;
+    margin-left: 60px;
+}
+
+
+nav{
+    background-color: #D6860D;
+    width: 100%;
+    Height:86px;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.header{margin-left: 40px;}
+.header h1{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    
+
+}
+header p{
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    max-width:375px;
+    /* height: 260px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+form h2{
+    color: #fff;
+}
+form article{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 9px;
+
+}
+#FirstName , #LastName {
+    width: 142px;
+    height: 42px;
+    border: #fff;
+    border-radius: 7px;
+    text-align: center;
+    }
+#email{
+    width: 303px;
+    height: 42px;
+    border-radius: 7px;
+    border: #fff;
+    /* text-align: calc(200px); اسالي سعيد عنها  */
+}
+form button {
+    color: #ffffff;
+    background-color: #EE950F;
+    width: 303px;
+    height: 42px;
+    text-align: center;
+    border-radius: 25px;
+    border: #fff;
+}
+/* @media screen {
+    moving-image {
+        background-image: url(/World-Of-Food-/images/background1.jfif);
+        animation-name: move;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes move {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(100px); }
+        100% { transform: translateX(0); }
+    }
+    
+} */
+@media all and (max-width:500px) {
+    .container{
+        align-items: center;
+        margin-left:0;
+    } 
+    .header{
+        margin-left: 0;}
+}
+@media all and (min-width:500px) {
+    body{background-image: url(/World-Of-Food-/images/background1.jfif);
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        height: 100vh;
+}
+    }

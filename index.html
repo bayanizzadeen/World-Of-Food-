@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        < link rel="stylesheet" href="styles/register.css">
+        <link rel="stylesheet" href="/World-Of-Food-/styles/register.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>registration page</title>
@@ -10,7 +10,7 @@
 
     <body>
         <nav>
-            <img alt="logo" src="">
+            <img alt="logo" src="/World-Of-Food-/images/logo.png">
             <svg >
                 <!-- Line 1 -->
                 <line />
@@ -19,29 +19,31 @@
                 <!-- Line 3 -->
                 <line   />
               </svg>
-              </nav>
-        <header class="header">
-            <h1>World Of Food </h1>
-            <p>Best Food Ever</p>
+        </nav>
+        <article class="container">
+            <header class="header">
+              <h1>World Of Food </h1>
+              <p>Best Food Ever</p>
 
-        </header>
+             </header>
         <form class="form">
             <h2>Registration Page</h2>
             <article class="name">
-             <input type="text" id="First Name" name="First Name"
+             <input type="text" id="FirstName" name="First Name"
              required minlength="3" maxlength="20" placeholder="First Name" 
              pattern="^[a-zA-Z0-9]+$" >
-             <input type="text" id="Last Name" name="Last Name"
+             <input type="text" id="LastName" name="Last Name"
              required minlength="3" maxlength="20" placeholder="Last Name" 
              pattern="^[a-zA-Z0-9]+$"  >   
             </article>
-             <input type="email" id="email" name="email">
+             <input type="email" id="email" name="email" placeholder="Email Address">
              <button type="submit">Register Now</button>
 
         </form>
         <footer>
 
         </footer>
+    </article>
     </body>
     
 </html>
