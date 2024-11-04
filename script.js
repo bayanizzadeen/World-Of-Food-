@@ -1,14 +1,19 @@
-const mainNav=document.querySelector(mainNav)
+const logo=document.querySelector("#logo")
+const menu=document.querySelector("#menu")
 const firstName=document.getElementById("FirstName")
 const lastName=document.getElementById("LastName")
 const email=document.getElementById("email")
+// const registers=JSON.parse(localStorage.getItem('Registers')) || []
 const registers=[];
+logo.addEventListener("click" ,()=>{
+    window.open("http://127.0.0.1:5500/World-Of-Food-/pages/meals.html")
+})
+menu.addEventListener("click",()=>{
+    window.open("http://127.0.0.1:5500/World-Of-Food-/pages/wishList.html")
+})
 
-mainNav.addEventListener("click" , function(e){
-    if(e.target.tagName==="IMG"){
-    }
-    else if(e.target.tagName==="SVG"){
-}})
+   
+
 
 function submitRegister(){
     if(firstName.value==='' || lastName.value==="" || email.value===""){
@@ -16,9 +21,9 @@ function submitRegister(){
        } 
        else{
         registers.push({
-            FirstName:firstName,
-            LastName:lastName,
-            Email:email
+            FirstName:firstName.value,
+            LastName:lastName.value,
+            Email:email.value
         })
         saveData();
         console.log(registers)
