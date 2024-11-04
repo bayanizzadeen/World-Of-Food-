@@ -2,16 +2,6 @@ body{
     background-color: #676262;
     ;
 }
-.nav1{
-    background-color: #D6860D;
-    width: 100%;
-    Height:86px;
-    border-radius: 0px 0px 8px 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
 .detailesOf{
     display: flex;
     flex-direction: column;
