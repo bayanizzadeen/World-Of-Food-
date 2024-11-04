@@ -1,0 +1,82 @@
+body{
+    background-color: #676262;
+    ;
+}
+.nav1{
+    background-color: #D6860D;
+    width: 100%;
+    Height:86px;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.detailesOf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.picOfmeail{
+    width: 375px;
+    height: 278.08px;
+}
+header h1{
+    margin-left: -180px;
+    color: #fff;
+}
+header p {
+    margin-left: -180px;
+    color: #fff;
+}
+.Contener-ingridents{
+    margin-left: 8px;
+    width: 375px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 20px;
+    
+    
+}
+.ingridents{
+    margin: 0px;
+    display: flex;
+    flex-direction: column; 
+    border: solid 2px black; 
+}
+.img-of-int{
+    width: 74px;
+    height: 65px;
+    border-radius: 10px;
+}
+.label{
+    color: #ffffff;
+    text-align: center;
+    width: 68.85px;
+    height: 9.74px;
+}
+.howToPrepare{
+    width: 139.13px;
+    height: 17.23px;
+    margin-top: 40px;
+    color: #ffffff;
+}
+.disHowToPrepare{
+    width: 342.15px;
+    height: 33.44px;
+    flex-wrap: wrap;
+    color: #ffffff;
+
+}
+.videoFeg{
+    width: 400px;
+    margin: 0px;
+}
+.fig-p{
+    width: 152.68px;
+    height: 14.02px;
+    text-align: center;
+    margin-top: 40px;
+    color: #ffffff;
+}
