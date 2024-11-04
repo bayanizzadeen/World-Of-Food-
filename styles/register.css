@@ -1,5 +1,8 @@
 body{
-    background-image: url(/World-Of-Food-/images/background1.jfif);
+
+    background-image: url(../images/background.png);
+
+   
     
 }
 .container{
@@ -21,13 +24,17 @@ nav{
     align-items: center;
 
 }
-.header{margin-left: 40px;}
+
+.header{
+    margin-left: 40px;}
+
 .header h1{
     color: #fff;
     font-family: Poppins;
     font-size: 36px;
     font-weight: 600;
     line-height: 54px;
+
     
 
 }
@@ -83,23 +90,30 @@ form button {
     border-radius: 25px;
     border: #fff;
 }
-/* @media screen {
-    moving-image {
-        background-image: url(/World-Of-Food-/images/background1.jfif);
-        animation-name: move;
-        animation-duration: 5s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-    }
-    
-    @keyframes move {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(100px); }
-        100% { transform: translateX(0); }
-    }
-    
-} */
+
 @media all and (max-width:500px) {
+    body{
+        background-image: url(../images/background.png);
+        /* height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat; */
+        animation: moveLeft 9s linear infinite;
+    }
+    @keyframes moveLeft {
+        0% {
+          background-position: 0 0;
+        }
+        33% {
+          background-position: 0 -166px ; /* تغيير الموضع */
+        }
+        66% {
+          background-position: -166px -332px ;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
     .container{
         align-items: center;
         margin-left:0;
@@ -108,10 +122,15 @@ form button {
         margin-left: 0;}
 }
 @media all and (min-width:500px) {
-    body{background-image: url(/World-Of-Food-/images/background1.jfif);
+
+    body{
+        background-image: url(../images/background.png);
+
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
         height: 100vh;
 }
+
     }
+
