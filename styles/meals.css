@@ -3,20 +3,32 @@ body{
     ;
 }
 .nav2{
+    overflow-x:scroll;
     background-color: #2e2e2d;
     margin-top: 20px;
-    width: 100%;
+    width: auto;
     height: 47px;
     display: flex;
     flex-direction: row;
+    
+}
+.nav2::-webkit-scrollbar {
+    display: none;
+  }
+.background{
+    background-color:#D6860D ;
+}
+.whitebackground{
+    background-color:#2e2e2d ;   
 }
 
 .link{
     color: #ffffff;
-    width: 150px;
+    min-width: 150px;
     /* border: solid 2px #000000 ; */
     text-align: center;
     padding-top: 13px;
+     cursor: pointer;/* hand icone */
 }
 .container{
     display: flex;
@@ -41,15 +53,31 @@ body{
 }
 .explane h2{
     color: #ffffff;
-    width: 40px;
     height: 20px;
     font-family: Righteous;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.87px;
-    text-align: center;
 }
- #p1{
+.explane{
+    position: relative;
+    margin-left: 10px;
+}
+.icons{
+    position: absolute;
+    top:2px;
+    right: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.white{
+    color: #ffffff;
+}
+.red{
+    color: red;
+}
+ .p1{
     color: #ffffff;
     width: 239px;
     height: 24px;
@@ -61,9 +89,9 @@ body{
     text-wrap: wrap;
 
     }
-#p2{
+.p2{
     color: #ffffff;
-    width: 73px;
+    max-width: 70px;
     height: 9px;
     font-family: Poppins;
     font-size: 6px;
