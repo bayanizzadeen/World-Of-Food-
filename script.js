@@ -20,7 +20,7 @@ function submitRegister(){
         })
         saveData();
         // console.log(registers)
-        window.open ("http://127.0.0.1:5500/World-Of-Food-/pages/meals.html")
+        window.open ("./pages/meals.html")
         
        }
 }
@@ -161,7 +161,7 @@ const makeArts=(array)=>{
          secPra.classList.add("p2")
          secPra.innerHTML=`Check More Information`
          secPra.addEventListener("click",()=>{//........................add meal in local for details
-            window.open("http://127.0.0.1:5500/World-Of-Food-/pages/details.html")
+            window.open('./details.html')
             localStorage.setItem("detiles",JSON.stringify(element))
          })
          Explane.appendChild(secPra)
