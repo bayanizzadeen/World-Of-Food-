@@ -3,17 +3,11 @@
 const firstName=document.getElementById("FirstName")
 const lastName=document.getElementById("LastName")
 const email=document.getElementById("email")
-
 // logo.addEventListener("click" ,()=>{
 //     window.open("http://127.0.0.1:5500/World-Of-Food-/pages/meals.html")
 // })
-// const registers=JSON.parse(localStorage.getItem('Registers')) || [] هاي بترجع كلشي قديم باللوكال
+// const registers=JSON.parse(localStorage.getItem('Registers')) || [] registers stored in local
 const registers=[];
-
-
-   
-
-
 function submitRegister(){
     if(firstName.value==='' || lastName.value==="" || email.value===""){
         alert("You must fill in all fields.")
@@ -36,8 +30,8 @@ function saveData(){
 }
 // ------------------------------------------------------------------------------------------------------------
 // script-MediaList.html
+let wishList=JSON.parse(localStorage.getItem('wishlist')) || []
 const mainArt=document.querySelector(".container")//contaner
-console.log(mainArt)
 const all=document.querySelector("#all")
 let mealslist=[] //list of all meals
 let mealsFilterdArray=[]
@@ -136,34 +130,65 @@ const makeArts=(array)=>{
          divIcons.classList.add("icons")
          
         
-         const video=document.createElement("i")
-         video.classList.add("fa", "fa-play","white");
-         divIcons.appendChild(video)
-         const heart=document.createElement("i")
-         heart.classList.add("fa", "fa-heart", "white");
-         divIcons.appendChild(heart)
-        //  console.log(heart)
-         Explane.appendChild(divIcons)
- 
-         const firstPra=document.createElement("p")
+        const video=document.createElement("i")
+        video.classList.add("fa", "fa-play","white");
+        const href=element.strYoutube//add link for video icon
+        const videoHref=document.createElement("a")
+        videoHref.appendChild(video)
+        videoHref.setAttribute("href", href)
+        divIcons.appendChild(videoHref)
+        const heart=document.createElement("i")
+        heart.classList.add("fa", "fa-heart", "white");
+        divIcons.appendChild(heart)
+        Explane.appendChild(divIcons)
+        let exists = wishList.some(item => item.idMeal === element.idMeal);//if meals in wishlist
+        if(exists){
+            heart.classList.add("red")
+        }
+        const firstPra=document.createElement("p")
          firstPra.classList.add("p1")
         let paragraph =element.strInstructions;//cuting the paragraph
          const maxLength = 140;
+
         //  console.log(paragraph)
          if (paragraph.length > maxLength) {
              paragraph = paragraph.substring(0, maxLength) + "...";
            }
-         firstPra.innerHTML=paragraph;
+        firstPra.innerHTML=paragraph;
         //  console.log(paragraph)
          Explane.appendChild(firstPra)
          const secPra=document.createElement("p")
          secPra.classList.add("p2")
          secPra.innerHTML=`Check More Information`
+         secPra.addEventListener("click",()=>{//........................add meal in local for details
+            window.open("http://127.0.0.1:5500/World-Of-Food-/pages/details.html")
+            localStorage.setItem("detiles",JSON.stringify(element))
+         })
          Explane.appendChild(secPra)
          //........................append all
          childArt.appendChild(imgOfmeal)
          childArt.appendChild(Explane)
+         heart.addEventListener("click",()=>{//add eventlistener to heart icone
+            
+            let someThing = wishList.some(item => item.idMeal === element.idMeal);
+            heart.classList.toggle("red")
+            
+            if(someThing ){
+                
+             wishList=wishList.filter((ele)=>ele.idMeal != element.idMeal)
+             localStorage.setItem('wishlist',JSON.stringify(wishList))
+            }
+            else{
+             
+             wishList.push(element)
+             localStorage.setItem('wishlist',JSON.stringify(wishList))  
+            }
+            
+           
+        })
          mainArt.appendChild(childArt)
         
     })
 }
+
+//----------------------------------------------------------------------

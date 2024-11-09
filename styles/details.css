@@ -10,13 +10,16 @@ body{
 .picOfmeail{
     width: 375px;
     height: 278.08px;
+    border-radius:0 0 20px 20px;
+}
+header{
+    margin-left: -140px;
+    padding-left: 10px;
 }
 header h1{
-    margin-left: -180px;
     color: #fff;
 }
 header p {
-    margin-left: -180px;
     color: #fff;
 }
 .Contener-ingridents{
@@ -30,31 +33,35 @@ header p {
     
 }
 .ingridents{
+    height: auto;
     margin: 0px;
     display: flex;
     flex-direction: column; 
-    border: solid 2px black; 
+    
 }
 .img-of-int{
-    width: 74px;
-    height: 65px;
+    max-width: 74px;
+    max-height: 65px;
     border-radius: 10px;
 }
 .label{
+    
     color: #ffffff;
     text-align: center;
+    text-wrap: wrap;
     width: 68.85px;
-    height: 9.74px;
+    
 }
 .howToPrepare{
-    width: 139.13px;
-    height: 17.23px;
+    width: 375px;
+    height: auto;
     margin-top: 40px;
+    padding-left: 35px;
     color: #ffffff;
 }
 .disHowToPrepare{
     width: 342.15px;
-    height: 33.44px;
+    height: auto;
     flex-wrap: wrap;
     color: #ffffff;
 
@@ -69,4 +76,9 @@ header p {
     text-align: center;
     margin-top: 40px;
     color: #ffffff;
+}
+.iframe{
+    width:400px;
+    height:auto;
+  
 }
