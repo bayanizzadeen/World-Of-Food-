@@ -118,7 +118,7 @@ const makeArts=(array)=>{
          const nameofmeal=document.createElement("h2")
          //.................................................//cuting the name
          let name =element.strMeal;
-         const maxLengthName = 32;
+         const maxLengthName = 12;
          if (name.length > maxLengthName) {
              name = name.substring(0, maxLengthName) + "...";
            }
@@ -148,7 +148,7 @@ const makeArts=(array)=>{
         const firstPra=document.createElement("p")
          firstPra.classList.add("p1")
         let paragraph =element.strInstructions;//cuting the paragraph
-         const maxLength = 140;
+         const maxLength = 60;
 
         //  console.log(paragraph)
          if (paragraph.length > maxLength) {
