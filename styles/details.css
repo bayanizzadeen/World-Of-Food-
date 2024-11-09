@@ -1,84 +1,76 @@
-body{
-    background-color: #676262;
-    ;
+body {
+  background-color: #676262;
 }
-.detailesOf{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.detailesOf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.picOfmeail{
-    width: 375px;
-    height: 278.08px;
-    border-radius:0 0 20px 20px;
+.picOfmeail {
+  width: 375px;
+  height: 278.08px;
+  border-radius: 0 0 20px 20px;
 }
-header{
-    margin-left: -140px;
-    padding-left: 10px;
+header {
+  margin-left: -140px;
+  padding-left: 10px;
 }
-header h1{
-    color: #fff;
+header h1 {
+  color: #fff;
 }
 header p {
-    color: #fff;
+  color: #fff;
 }
-.Contener-ingridents{
-    margin-left: 8px;
-    width: 375px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    gap: 20px;
-    
-    
+.Contener-ingridents {
+  margin-left: 8px;
+  width: 375px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.ingridents{
-    height: auto;
-    margin: 0px;
-    display: flex;
-    flex-direction: column; 
-    
+.ingridents {
+  height: auto;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
-.img-of-int{
-    max-width: 74px;
-    max-height: 65px;
-    border-radius: 10px;
+.img-of-int {
+  max-width: 74px;
+  max-height: 65px;
+  border-radius: 10px;
 }
-.label{
-    
-    color: #ffffff;
-    text-align: center;
-    text-wrap: wrap;
-    width: 68.85px;
-    
+.label {
+  color: #ffffff;
+  text-align: center;
+  text-wrap: wrap;
+  width: 68.85px;
 }
-.howToPrepare{
-    width: 375px;
-    height: auto;
-    margin-top: 40px;
-    padding-left: 35px;
-    color: #ffffff;
+.howToPrepare {
+  width: 375px;
+  height: auto;
+  margin-top: 40px;
+  padding-left: 35px;
+  color: #ffffff;
 }
-.disHowToPrepare{
-    width: 342.15px;
-    height: auto;
-    flex-wrap: wrap;
-    color: #ffffff;
-
+.disHowToPrepare {
+  width: 342.15px;
+  height: auto;
+  flex-wrap: wrap;
+  color: #ffffff;
 }
-.videoFeg{
-    width: 400px;
-    margin: 0px;
+.videoFeg {
+  width: 400px;
+  margin: 0px;
 }
-.fig-p{
-    width: 152.68px;
-    height: 14.02px;
-    text-align: center;
-    margin-top: 40px;
-    color: #ffffff;
+.fig-p {
+  width: 152.68px;
+  height: 14.02px;
+  text-align: center;
+  margin-top: 40px;
+  color: #ffffff;
 }
-.iframe{
-    width:400px;
-    height:auto;
-  
+.iframe {
+  width: 400px;
+  height: auto;
 }

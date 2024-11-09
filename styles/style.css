@@ -1,18 +1,18 @@
-.mainNav{
-    background-color: #D6860D;
-    min-width: 100%;
-    Height:86px;
-    border-radius: 0px 0px 8px 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
+.mainNav {
+  background-color: #d6860d;
+  min-width: 100%;
+  height: 86px;
+  border-radius: 0px 0px 8px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
 }
-.mainNav #menu{
-    position: absolute;
-    right: 10px;
+.mainNav #menu {
+  position: absolute;
+  right: 10px;
 }
-.mainNav #menuRegister{
-    position: absolute;
-    right: 10px;
+.mainNav #menuRegister {
+  position: absolute;
+  right: 10px;
 }

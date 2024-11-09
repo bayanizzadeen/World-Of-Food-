@@ -1,136 +1,126 @@
-body{
-
-    background-image: url(../images/background.png);
-
-   
-    
+body {
+  background-image: url(../images/background.png);
 }
-.container{
-    display: flex;
-    flex-direction: column; 
-    align-items: start;
-    gap: 30px;
-    margin-left: 60px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  margin-left: 60px;
 }
 
-
-nav{
-    background-color: #D6860D;
-    width: 100%;
-    Height:86px;
-    border-radius: 0px 0px 8px 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+nav {
+  background-color: #d6860d;
+  width: 100%;
+  height: 86px;
+  border-radius: 0px 0px 8px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.header{
-    margin-left: 40px;}
-
-.header h1{
-    color: #fff;
-    font-family: Poppins;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 54px;
-
-    
-
-}
-header p{
-    color: #ffffff;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header {
+  margin-left: 40px;
 }
 
-form{
-    max-width:375px;
-    /* height: 260px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+.header h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
 }
-form h2{
-    color: #fff;
+header p {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-form article{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    gap: 9px;
 
+form {
+  max-width: 375px;
+  /* height: 260px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
-#FirstName , #LastName {
-    width: 142px;
-    height: 42px;
-    border: #fff;
-    border-radius: 7px;
-    text-align: center;
-    }
-#email{
-    width: 303px;
-    height: 42px;
-    border-radius: 7px;
-    border: #fff;
-    /* text-align: calc(200px); اسالي سعيد عنها  */
+form h2 {
+  color: #fff;
+}
+form article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 9px;
+}
+#FirstName,
+#LastName {
+  width: 142px;
+  height: 42px;
+  border: #fff;
+  border-radius: 7px;
+  text-align: center;
+}
+#email {
+  width: 303px;
+  height: 42px;
+  border-radius: 7px;
+  border: #fff;
+  /* text-align: calc(200px); اسالي سعيد عنها  */
 }
 form button {
-    color: #ffffff;
-    background-color: #EE950F;
-    width: 303px;
-    height: 42px;
-    text-align: center;
-    border-radius: 25px;
-    border: #fff;
+  color: #ffffff;
+  background-color: #ee950f;
+  width: 303px;
+  height: 42px;
+  text-align: center;
+  border-radius: 25px;
+  border: #fff;
 }
 
-@media all and (max-width:500px) {
-    body{
-        background-image: url(../images/background.png);
-        /* height: 100vh;
+@media all and (max-width: 500px) {
+  body {
+    background-image: url(../images/background.png);
+    /* height: 100vh;
         background-size: cover;
         background-repeat: no-repeat; */
-        animation: moveLeft 9s linear infinite;
+    animation: moveLeft 9s linear infinite;
+  }
+  @keyframes moveLeft {
+    0% {
+      background-position: 0 0;
     }
-    @keyframes moveLeft {
-        0% {
-          background-position: 0 0;
-        }
-        33% {
-          background-position: 0 -166px ; /* تغيير الموضع */
-        }
-        66% {
-          background-position: -166px -332px ;
-        }
-        100% {
-          background-position: 0 0;
-        }
-      }
-
-    .container{
-        align-items: center;
-        margin-left:0;
-    } 
-    .header{
-        margin-left: 0;}
-}
-@media all and (min-width:500px) {
-
-    body{
-        background-image: url(../images/background.png);
-
-        background-size: cover;
-        background-position: center; 
-        background-repeat: no-repeat;
-        height: 100vh;
-}
-
+    33% {
+      background-position: 0 -166px; /* تغيير الموضع */
     }
+    66% {
+      background-position: -166px -332px;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
 
+  .container {
+    align-items: center;
+    margin-left: 0;
+  }
+  .header {
+    margin-left: 0;
+  }
+}
+@media all and (min-width: 500px) {
+  body {
+    background-image: url(../images/background.png);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}
